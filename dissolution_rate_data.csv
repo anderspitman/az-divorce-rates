@@ -1,0 +1,91 @@
+county,year,dissolutionRate
+Apache,2010,1.00
+Cochise,2010,4.90
+Coconino,2010,3.90
+Gila,2010,3.90
+Graham,2010,5.10
+Greenlee,2010,5.30
+La Paz,2010,2.10
+Maricopa,2010,3.50
+Mohave,2010,2.60
+Navajo,2010,1.50
+Pima,2010,4.10
+Pinal,2010,2.90
+Santa Cruz,2010,2.80
+Yavapai,2010,4.30
+Yuma,2010,3.70
+Apache,2011,1.00
+Cochise,2011,4.50
+Coconino,2011,2.90
+Gila,2011,3.00
+Graham,2011,3.60
+Greenlee,2011,4.70
+La Paz,2011,1.80
+Maricopa,2011,4.20
+Mohave,2011,3.30
+Navajo,2011,2.30
+Pima,2011,4.20
+Pinal,2011,2.90
+Santa Cruz,2011,2.30
+Yavapai,2011,4.30
+Yuma,2011,3.60
+Apache,2012,0.80
+Cochise,2012,4.40
+Coconino,2012,3.10
+Gila,2012,3.20
+Graham,2012,5.00
+Greenlee,2012,5.00
+La Paz,2012,1.50
+Maricopa,2012,4.90
+Mohave,2012,3.00
+Navajo,2012,2.30
+Pima,2012,4.00
+Pinal,2012,2.20
+Santa Cruz,2012,1.70
+Yavapai,2012,4.90
+Yuma,2012,3.90
+Apache,2013,1.10
+Cochise,2013,3.20
+Coconino,2013,2.80
+Gila,2013,2.50
+Graham,2013,4.10
+Greenlee,2013,4.10
+La Paz,2013,0.60
+Maricopa,2013,4.50
+Mohave,2013,2.00
+Navajo,2013,1.90
+Pima,2013,3.80
+Pinal,2013,1.60
+Santa Cruz,2013,2.00
+Yavapai,2013,3.70
+Yuma,2013,4.70
+Apache,2014,1.00
+Cochise,2014,2.90
+Coconino,2014,2.60
+Gila,2014,3.00
+Graham,2014,3.50
+Greenlee,2014,4.90
+La Paz,2014,0.80
+Maricopa,2014,4.60
+Mohave,2014,1.90
+Navajo,2014,2.30
+Pima,2014,3.70
+Pinal,2014,2.30
+Santa Cruz,2014,2.00
+Yavapai,2014,3.20
+Yuma,2014,3.60
+Apache,2015,0.90
+Cochise,2015,3.60
+Coconino,2015,2.60
+Gila,2015,2.20
+Graham,2015,4.20
+Greenlee,2015,4.50
+La Paz,2015,1.60
+Maricopa,2015,4.00
+Mohave,2015,2.80
+Navajo,2015,2.00
+Pima,2015,3.40
+Pinal,2015,2.20
+Santa Cruz,2015,2.90
+Yavapai,2015,3.40
+Yuma,2015,3.90
