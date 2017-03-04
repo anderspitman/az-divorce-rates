@@ -6,8 +6,8 @@
   <style>
     .map {
       //float: left;
-      height: 800px;
-      width: 600px;
+      width: 800px;
+      height: 600px;
     }
 
     .map_small_multiple {
@@ -19,8 +19,9 @@
 </head>
 
 <body>
+  <div id="root"></div>
   <div class="map" id="map"></div>
-  <div class="map" id="map_quantile"></div>
+  <!--<div class="map" id="map_quantile"></div>-->
   <div class="map_small_multiple" id="map_small_multiple_2010"></div>
   <div class="map_small_multiple" id="map_small_multiple_2011"></div>
   <div class="map_small_multiple" id="map_small_multiple_2012"></div>
@@ -28,10 +29,11 @@
   <div class="map_small_multiple" id="map_small_multiple_2014"></div>
   <div class="map_small_multiple" id="map_small_multiple_2015"></div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.1/immutable.js"></script>
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-  <script src="lib/papaparse.min.js"></script>
+  <script src="node_modules/papaparse/papaparse.min.js"></script>
   <script src="az_counties.geojson"></script>
-  <script src="index.js"></script>
+  <script src="dist/bundle.js"></script>
 </body>
 
 </html>

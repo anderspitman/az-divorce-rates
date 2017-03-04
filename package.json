@@ -1,0 +1,32 @@
+{
+  "name": "az-dissolution-rates",
+  "version": "0.0.1",
+  "description": "Choropleth of AZ Divorce Rates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browserify": "browserify lib -o dist/bundle.js",
+    "watchify": "watchify lib -o dist/bundle.js",
+    "babel": "babel src -d lib",
+    "babel-watch": "babel --watch src -d lib",
+    "build": "npm run babel && npm run browserify",
+    "watch-build": "ls index.html src/* | entr npm run build"
+  },
+  "author": "Anders Pitman",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": "^1.0.3",
+    "papaparse": "^4.1.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-leaflet": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2019": "^1.0.0",
+    "babel-preset-react": "^6.23.0",
+    "browserify": "^14.1.0",
+    "watchify": "^3.9.0"
+  }
+}
