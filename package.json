@@ -15,6 +15,7 @@
   "author": "Anders Pitman",
   "license": "MIT",
   "dependencies": {
+    "immutable": "^3.8.1",
     "leaflet": "^1.0.3",
     "papaparse": "^4.1.4",
     "react": "^15.4.2",
