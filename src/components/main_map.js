@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
-import { mapUrl, mapboxAccessToken, buildColorFunc } from './map_common';
+import { mapUrl, mapboxAccessToken, buildColorFunc } from '../map_common';
 
 export class MainMap extends React.Component {
   render() {

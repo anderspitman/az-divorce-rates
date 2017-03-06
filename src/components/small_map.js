@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
-import { mapUrl, mapboxAccessToken, buildColorFunc } from './map_common';
+import { mapUrl, mapboxAccessToken, buildColorFunc } from '../map_common';
 
 
 class SmallMultipleMap extends React.Component {
@@ -30,17 +30,22 @@ class SmallMultipleMap extends React.Component {
     };
 
     return (
-      <Map style={style} center={this.props.position} zoom={5}
-          zoomControl={false} attributionControl={false} dragging={false}
-          scroolWheelZoom={false} boxZoom={false} doubleClickZoom={false}
-          touchZoom={false}>
-        <TileLayer
-          id='mapbox.light'
-          url={mapUrl}
-          accessToken={mapboxAccessToken}
-        />
-        <GeoJSON data={this.props.countyData} style={styleFunc} />
-      </Map>
+      <div>
+        <div>
+          Hi there
+        </div>
+        <Map style={style} center={this.props.position} zoom={5}
+            zoomControl={false} attributionControl={false} dragging={false}
+            scrollWheelZoom={false} boxZoom={false} doubleClickZoom={false}
+            touchZoom={false}>
+          <TileLayer
+            id='mapbox.light'
+            url={mapUrl}
+            accessToken={mapboxAccessToken}
+          />
+          <GeoJSON data={this.props.countyData} style={styleFunc} />
+        </Map>
+      </div>
     );
   }
 }

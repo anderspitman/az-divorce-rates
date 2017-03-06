@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Papa from 'papaparse';
-import { App } from './app';
+import { App } from './components/app';
 
 const position = [34.0489, -111.0937];
 const years = [ 2010, 2011, 2012, 2013, 2014, 2015 ];
