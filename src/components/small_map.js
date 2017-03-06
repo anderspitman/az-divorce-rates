@@ -5,12 +5,20 @@ import { mapUrl, mapboxAccessToken, buildColorFunc } from '../map_common';
 
 
 class SmallMultipleMap extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onClick = this.onClick.bind(this);
+  }
 
   render() {
     const style = {
       width: "200px",
       height: "200px",
       float: "left"
+    };
+
+    const s = {
     };
 
     const year = this.props.year;
@@ -30,10 +38,7 @@ class SmallMultipleMap extends React.Component {
     };
 
     return (
-      <div>
-        <div>
-          Hi there
-        </div>
+      <div onClick={this.onClick} >
         <Map style={style} center={this.props.position} zoom={5}
             zoomControl={false} attributionControl={false} dragging={false}
             scrollWheelZoom={false} boxZoom={false} doubleClickZoom={false}
@@ -48,22 +53,36 @@ class SmallMultipleMap extends React.Component {
       </div>
     );
   }
+
+  onClick() {
+    this.props.onChange(this.props.year);
+  }
 }
 
 export class SmallMultiples extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.onChildClicked = this.onChildClicked.bind(this);
+  }
 
   render() {
     const countyData = this.props.countyData;
     const years = this.props.years;
     const smallMaps = years.map((year) =>
       <SmallMultipleMap key={year} year={year} countyData={countyData}
-          position={this.props.position} />
+          position={this.props.position} onChange={this.onChildClicked} />
     );
     return (
       <div>
         {smallMaps}
       </div>
     );
+  }
+
+  onChildClicked(year) {
+    this.props.onChange(year);
   }
 }
 
